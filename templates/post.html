@@ -1,17 +1,14 @@
-{% load static %}
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media App</title>
+    <title>Create a New Post</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header class="bg-dark text-white text-center py-3">
-        <h1>Welcome to Chic Nerd Connect App</h1>
+        <h1>Create a New Post</h1>
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -29,28 +26,22 @@
         </div>
     </nav>
     <main class="container mt-4">
-        <div class="row">
-            <div class="col-md-8">
-                <section class="posts">
-                    <h2>Recent Posts</h2>
-                    <!-- Example post -->
-                    <article class="post card mb-4">
-                        <div class="card-body">
-                            <h3 class="card-title">Post Title</h3>
-                            <p class="card-text">Post content goes here...</p>
-                        </div>
-                    </article>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <aside class="sidebar card">
-                    <div class="card-body">
-                        <h2 class="card-title">Sidebar</h2>
-                        <p class="card-text">Additional content goes here...</p>
+        <section class="new-post card">
+            <div class="card-body">
+                <h2 class="card-title">New Post</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" class="form-control" required>
                     </div>
-                </aside>
+                    <div class="form-group">
+                        <label for="content">Content:</label>
+                        <textarea id="content" name="content" rows="4" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Post</button>
+                </form>
             </div>
-        </div>
+        </section>
     </main>
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 Chic Nerd Connect</p>
